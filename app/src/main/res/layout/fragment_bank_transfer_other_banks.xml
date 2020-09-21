@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bank_transfer_other_banks" >
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="382dp"
+        android:layout_height="566dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/credit_card_add_background"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_input_field"
+        android:entries="@array/bank_names"
+        android:textColor="#014590"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_input_field"
+        android:ems="10"
+        android:hint="Jane Appleseed"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:textColor="#014590"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <EditText
+        android:id="@+id/email4"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_input_field"
+        android:ems="10"
+        android:hint="xxxxxxxxx"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:textColor="#014590"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <EditText
+        android:id="@+id/email3"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input_field"
+        android:ems="10"
+        android:hint="0.0"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:textColor="#014590"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <EditText
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/text_input_field"
+        android:ems="10"
+        android:hint="Reason For Transfer"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:textColor="#014590"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ENTER ACCOUNT NUMBER"
+        android:textColor="#014590"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/spinner5" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT BANK"
+        android:textColor="#014590"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="226dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="ACCOUNT HOLDER NAME"
+        android:textColor="#014590"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/email4" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="151dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="AMOUNT (IN LKR)"
+        android:textColor="#014590"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/email2" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="151dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="NARRATION"
+        android:textColor="#014590"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/email3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">UEE_Banking_App_Android</string>
+    <string name="name">Name</string>
+    <string name="defualt_empty" />
+    <string name="branch">branch</string>
+    <string name="account_name">Account Name</string>
+    <string name="select_account_details">Select Account Details</string>
+    <string name="account_type">Account Type</string>
+    <string name="debit_limit">Debit Limit</string>
+    <string name="over_draft_limit">Over Daft Limit</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="new_account">New Account</string>
+    <string name="details">Details</string>
+    <string name="owner">Owner </string>
+    <string name="credit_interest">Credit Interest</string>
+    <string name="dibit_interest">Debit Interest</string>
+    <string name="colon">:</string>
+    <string name="empty_string" />
+    <string name="debit_interest">Debit Interest</string>
+    <string name="balance">Balance</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="account_information">Account Information</string>
+    <string name="available">Available</string>
+    <string name="total">Total</string>
+    <string name="credit">Credit</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="select_account_names">
+        <item>John Doe</item>
+    </string-array>
+
+    <string-array name="select_number_of_books">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="select_number_of_leaves">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+    <string-array name="own_accs">
+        <item>8104242</item>
+        <item>8104525</item>
+        <item>8107373</item>
+    </string-array>
+
+    <string-array name="bank_names">
+        <item>COMMERCIAL BANK</item>
+        <item>PEOPLES BANK</item>
+        <item>NATIONS TRUST BANK</item>
+        <item>NATIONAL SAVINGS BANK</item>
+        <item>BANK OF CEYLON</item>
+        <item>DFCC BANK</item>
+        <item>SAMPATH BANK</item>
+        <item>SEYLAN BANK</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1_month">1 Month</string>
+    <string name="_2_month">2 Month</string>
+    <string name="_6_month">6 Month</string>
+    <string name="_1_year">1 Year</string>
+    <string name="all">All</string>
+    <string name="interest">Interest</string>
+    <string name="atm">ATM</string>
+    <string name="payments">Payments</string>
+    <string name="cerdit">Cerdit</string>
+    <string name="debit">Debit</string>
+    <string name="transfer">Transfer</string>
+    <string name="_3_Month">3 Month</string>
+    <string name="status">Status</string>
+    <string name="hold">Hold</string>
+    <string name="un_available_balance">Un-Available Balance</string>
+    <string name="nic">NIC</string>
+    <string name="currency">Currency</string>
+
+
+    <string-array name="account_type">
+        <item>Personal</item>
+        <item>Savings</item>
+        <item>Fixed Deposit</item>
+        <item>Money Marketing</item>
+        <item>Retirement Accounts</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>LRK</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CNH</item>
+        <item>NZD</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

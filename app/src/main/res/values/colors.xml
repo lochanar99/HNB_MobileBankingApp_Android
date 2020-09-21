@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_light_gray_background">#BDBDBD</color>
+    <color name="logo_background">#F9AC19</color>
+    <color name="default_project_background">#3C3C3C</color>
+    <color name="default_text_colour">#024EA2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="see_through_background">#00FFFFFF</color>
+    <color name="transp">#00FFFFFF</color>
+    <color name="error_text_red">#C30208</color>
+
+</resources>

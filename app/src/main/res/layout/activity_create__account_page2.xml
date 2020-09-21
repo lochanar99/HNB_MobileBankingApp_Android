@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_project_background"
+    tools:context=".Create_Account_page2">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-51dp"
+        tools:layout_editor_absoluteY="-242dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/logo_background"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/logo_background" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+                app:layout_constraintEnd_toEndOf="@+id/logo_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/logo_background"
+                app:srcCompat="@drawable/hnb_logo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inner_layout"
+                android:layout_width="0dp"
+                android:layout_height="540dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/default_light_gray_background"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo_background">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp">
+
+                    <Button
+                        android:id="@+id/next_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/next_button"
+                        android:onClick="openNext"
+                        android:text="@string/defualt_empty"
+                        app:layout_constraintEnd_toStartOf="@id/back_button"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/debit_limit_field" />
+
+                    <Button
+                        android:id="@+id/back_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/cancel_button"
+                        android:onClick="back"
+                        android:text="@string/defualt_empty"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/next_button" />
+
+
+                    <ImageView
+                        android:id="@+id/account_name_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_account_name"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/account_type_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lable_account_type"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/debit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/currency_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_over_daft_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/credit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
+
+
+                    <EditText
+                        android:id="@+id/text_account_name"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/see_through_background"
+                        android:inputType="text|textCapSentences"
+                        android:maxLines="1"
+                        android:onClick="clickName"
+                        android:paddingStart="20dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/Black"
+                        app:layout_constraintBottom_toBottomOf="@+id/account_name_field"
+                        app:layout_constraintEnd_toEndOf="@+id/account_name_field"
+                        app:layout_constraintStart_toStartOf="@+id/account_name_field"
+                        app:layout_constraintTop_toTopOf="@+id/account_name_field" />
+
+                    <EditText
+                        android:id="@+id/text_debit_limit"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/see_through_background"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/Black"
+                        app:layout_constraintBottom_toBottomOf="@id/debit_limit_field"
+                        app:layout_constraintEnd_toEndOf="@id/debit_limit_field"
+                        app:layout_constraintStart_toStartOf="@id/debit_limit_field"
+                        app:layout_constraintTop_toTopOf="@id/debit_limit_field"
+                        tools:text="100000" />
+
+                    <EditText
+                        android:id="@+id/text_credit_limit"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/see_through_background"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/Black"
+                        app:layout_constraintBottom_toBottomOf="@id/credit_limit_field"
+                        app:layout_constraintEnd_toEndOf="@id/credit_limit_field"
+                        app:layout_constraintStart_toStartOf="@id/credit_limit_field"
+                        app:layout_constraintTop_toTopOf="@id/credit_limit_field"
+                        tools:text="100000" />
+
+                    <Spinner
+                        android:id="@+id/text_currency"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/see_through_background"
+                        android:entries="@array/currency"
+                        android:imeOptions="actionDone"
+                        android:inputType="text|textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/Black"
+                        app:layout_constraintBottom_toBottomOf="@id/currency_field"
+                        app:layout_constraintEnd_toEndOf="@id/currency_field"
+                        app:layout_constraintStart_toStartOf="@id/currency_field"
+                        app:layout_constraintTop_toTopOf="@id/currency_field" />
+
+                    <Spinner
+                        android:id="@+id/text_account_type"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/see_through_background"
+                        android:entries="@array/account_type"
+                        android:inputType="text|textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/Black"
+                        app:layout_constraintBottom_toBottomOf="@id/account_type_field"
+                        app:layout_constraintEnd_toEndOf="@id/account_type_field"
+                        app:layout_constraintStart_toStartOf="@id/account_type_field"
+                        app:layout_constraintTop_toTopOf="@id/account_type_field" />
+
+                    <TextView
+                        android:id="@+id/lable_account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/account_name"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/page_heading" />
+
+
+                    <TextView
+                        android:id="@+id/lable_account_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/account_type"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/account_name_field" />
+
+                    <TextView
+                        android:id="@+id/lable_debit_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/debit_limit"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
+
+                    <TextView
+                        android:id="@+id/lable_over_daft_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/currency"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_account_type" />
+
+                    <TextView
+                        android:id="@+id/lable_credit_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/credit_limit"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_currency" />
+
+                    <TextView
+                        android:id="@+id/page_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/select_account_details"
+                        android:textColor="@color/default_text_colour"
+                        android:textSize="27dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

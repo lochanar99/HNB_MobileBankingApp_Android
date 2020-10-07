@@ -9,10 +9,10 @@
 
     <Button
         android:id="@+id/add_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/add_button"
         android:onClick="openCreate"
         android:text="@string/empty_string"
@@ -80,138 +80,22 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/top_details_block"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
+                    android:layout_width="392dp"
+                    android:layout_height="164dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    app:cardBackgroundColor="@color/logo_background"
-                    app:cardCornerRadius="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="15dp"
                     app:cardElevation="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <LinearLayout
-                        android:id="@+id/top_details_block_layout"
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="379dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/header"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="@string/account_information"
-                            android:textColor="@color/Black"
-                            android:textSize="35sp" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/label_available"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:text="@string/available"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/colon1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
-                                android:text="@string/colon"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/text_Available"
-                                android:layout_width="150dp"
-                                android:layout_height="wrap_content"
-                                android:text="346,206.65‬"
-                                android:textAlignment="textEnd"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/label_total"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:text="@string/total"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/colon2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="41dp"
-                                android:text="@string/colon"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/text_total"
-                                android:layout_width="150dp"
-                                android:layout_height="match_parent"
-                                android:text="569,739.65‬"
-                                android:textAlignment="textEnd"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/label_credit"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:text="@string/credit"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/colon3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="34dp"
-                                android:text="@string/colon"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/text_credit"
-                                android:layout_width="150dp"
-                                android:layout_height="wrap_content"
-                                android:text="0.00"
-                                android:textAlignment="textEnd"
-                                android:textColor="@color/Black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
+                        app:srcCompat="@drawable/accounthead" />
                 </androidx.cardview.widget.CardView>
 
 

@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="203dp"
             android:scaleType="fitXY"
-            app:cardBackgroundColor="@color/default_project_background"
+            app:cardBackgroundColor="@color/dark_blue"
             app:cardCornerRadius="25dp"
             app:cardElevation="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,17 +35,6 @@
                 android:layout_height="match_parent"
                 android:paddingBottom="10dp">
 
-
-                <ImageView
-                    android:id="@+id/imageView14"
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/account_name"
-                    app:srcCompat="@color/default_text_colour" />
 
                 <ImageView
                     android:id="@+id/imageView"

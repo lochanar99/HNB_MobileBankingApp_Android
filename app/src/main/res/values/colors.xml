@@ -8,6 +8,11 @@
     <color name="Black">#000000</color>
     <color name="see_through_background">#00FFFFFF</color>
     <color name="transp">#00FFFFFF</color>
+    <color name="dark_blue">#000034</color>
     <color name="error_text_red">#C30208</color>
+    <color name="mid_blue">#8282ff</color>
+    <color name="light_orange"> #e0ff45</color>
+
+
 
 </resources>

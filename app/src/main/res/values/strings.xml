@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UEE_Banking_App_Android</string>
+    <string name="app_name">HNB Banking</string>
     <string name="name">Name</string>
     <string name="defualt_empty" />
     <string name="branch">branch</string>
@@ -27,47 +27,17 @@
 
     <!-- TODO: Remove or change this placeholder text -->
 
-    <string-array name="select_account_names">
-        <item>John Doe</item>
-    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="select_number_of_books">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
+    <string name="_1_month">1 Month</string>
 
-    <string-array name="select_number_of_leaves">
-        <item>10</item>
-        <item>20</item>
-        <item>30</item>
-        <item>40</item>
-    </string-array>
+    <string name="_2_month">2 Month</string>
 
-    <string-array name="own_accs">
-        <item>8104242</item>
-        <item>8104525</item>
-        <item>8107373</item>
-    </string-array>
+    <string name="_6_month">6 Month</string>
 
-    <string-array name="bank_names">
-        <item>COMMERCIAL BANK</item>
-        <item>PEOPLES BANK</item>
-        <item>NATIONS TRUST BANK</item>
-        <item>NATIONAL SAVINGS BANK</item>
-        <item>BANK OF CEYLON</item>
-        <item>DFCC BANK</item>
-        <item>SAMPATH BANK</item>
-        <item>SEYLAN BANK</item>
-    </string-array>
+    <string name="_1_year">1 Year</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="_1_month">1 Month</string>
-    <string name="_2_month">2 Month</string>
-    <string name="_6_month">6 Month</string>
-    <string name="_1_year">1 Year</string>
     <string name="all">All</string>
     <string name="interest">Interest</string>
     <string name="atm">ATM</string>
@@ -81,6 +51,36 @@
     <string name="un_available_balance">Un-Available Balance</string>
     <string name="nic">NIC</string>
     <string name="currency">Currency</string>
+    <string-array name="select_account_names">
+        <item>John Doe</item>
+    </string-array>
+    <string-array name="select_number_of_books">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="select_number_of_leaves">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="own_accs">
+        <item>8104242</item>
+        <item>8104525</item>
+        <item>8107373</item>
+    </string-array>
+    <string-array name="bank_names">
+        <item>COMMERCIAL BANK</item>
+        <item>PEOPLES BANK</item>
+        <item>NATIONS TRUST BANK</item>
+        <item>NATIONAL SAVINGS BANK</item>
+        <item>BANK OF CEYLON</item>
+        <item>DFCC BANK</item>
+        <item>SAMPATH BANK</item>
+        <item>SEYLAN BANK</item>
+    </string-array>
 
 
     <string-array name="account_type">
@@ -102,19 +102,6 @@
         <item>CNH</item>
         <item>NZD</item>
     </string-array>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -33,14 +33,15 @@
         app:layout_constraintTop_toTopOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.08" />
 
-    <EditText
+    <com.santalu.maskedittext.MaskEditText
         android:id="@+id/creditCardNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/text_input_field"
         android:ems="10"
         android:hint="1234     5678    3456    2456"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        app:met_mask="#### #### #### ####"
         android:paddingLeft="25dp"
         android:textColor="#014590"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -97,14 +98,15 @@
         app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/expDate"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/text_input_field"
         android:ems="10"
         android:hint="05 / 21"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:paddingLeft="25dp"
         android:textColor="#014590"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
@@ -112,7 +114,8 @@
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:met_mask="## / ## " />
 
     <TextView
         android:id="@+id/textView8"
@@ -124,27 +127,28 @@
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.175" />
 
     <EditText
         android:id="@+id/forgotPWusername"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:background="@drawable/text_input_field"
         android:ems="10"
         android:hint="123"
-        android:inputType="textPersonName"
+        android:maxLength="3"
+        android:inputType="numberPassword"
         android:paddingLeft="25dp"
         android:textColor="#014590"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.484" />
 
     <Button
         android:id="@+id/button5"

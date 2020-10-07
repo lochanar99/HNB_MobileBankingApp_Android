@@ -104,7 +104,7 @@ public class credit_cards extends AppCompatActivity {
         yesBttn = (Button) myDialog.findViewById(R.id.msg_yes_bttn);
         textMsg = (TextView) myDialog.findViewById(R.id.textView19);
 
-        textMsg.setText("Are you sure u want to delink the selected card?");
+        textMsg.setText("Are you sure u want to delink card?");
 
         closeBttn.setOnClickListener(new View.OnClickListener() {
             @Override

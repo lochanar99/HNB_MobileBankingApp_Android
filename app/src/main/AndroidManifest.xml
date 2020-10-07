@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
-        <activity android:name=".my_provider_payment"></activity>
+        </activity>
+        <activity android:name=".my_provider_payment" />
         <activity android:name=".add_provider_ui" />
         <activity android:name=".bank_transfer_popup" />
         <activity android:name=".TransactionHistory" />
@@ -19,9 +25,10 @@
         <activity android:name=".Confirm_New_Account" />
         <activity android:name=".Create_Account_page2" />
         <activity android:name=".CreateAccount" />
-        <activity android:name=".Select_Account"
+        <activity
+            android:name=".Select_Account"
             android:theme="@style/account_background" />
-        <activity android:name=".BillPaymentsMain"></activity>
+        <activity android:name=".BillPaymentsMain" />
         <activity android:name=".menu_transaction_submenu" />
         <activity android:name=".popup_message_request_book" />
         <activity android:name=".request_cheque_book" />
@@ -73,11 +80,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

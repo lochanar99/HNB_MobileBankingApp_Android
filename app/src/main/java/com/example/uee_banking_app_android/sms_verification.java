@@ -32,7 +32,7 @@ public class sms_verification extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please Enter SMS code", Toast.LENGTH_LONG).show();
         }
         else {
-            Intent intent = new Intent(this, menu_screen.class);
+            Intent intent = new Intent(this, dashboard.class);
             startActivity(intent);
         }
     }

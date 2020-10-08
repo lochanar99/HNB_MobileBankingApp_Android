@@ -38,7 +38,7 @@
                 app:layout_constraintStart_toStartOf="@+id/logo_background"
                 app:layout_constraintTop_toTopOf="@+id/logo_background"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/hnb_logo" />
+                app:srcCompat="@drawable/header" />
 
             <ImageView
                 android:id="@+id/inner_layout"
@@ -100,10 +100,10 @@
 
                 <TextView
                     android:id="@+id/header"
-                    android:layout_width="wrap_content"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/new_account"
+                    android:text="New Accunt"
                     android:textColor="@color/white"
                     android:textSize="40sp"
                     android:textStyle="bold" />
@@ -111,7 +111,7 @@
 
                 <TextView
                     android:id="@+id/header_details"
-                    android:layout_width="wrap_content"
+                    android:layout_width="119dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
@@ -488,7 +488,7 @@
                 android:id="@+id/next_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/cancel_button"
                 android:onClick="cancel"
@@ -500,7 +500,7 @@
                 android:id="@+id/send_reqeust_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/send_request_button"
                 android:onClick="confirm"

@@ -11,6 +11,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bg"
         tools:layout_editor_absoluteX="-51dp"
         tools:layout_editor_absoluteY="-242dp">
 
@@ -36,15 +37,15 @@
                 app:layout_constraintEnd_toEndOf="@+id/logo_background"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/logo_background"
-                app:srcCompat="@drawable/hnb_logo" />
+                app:srcCompat="@drawable/header" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/inner_layout"
                 android:layout_width="0dp"
                 android:layout_height="540dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
                 app:cardBackgroundColor="@color/default_light_gray_background"
                 app:cardCornerRadius="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -80,54 +81,6 @@
                         app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/next_button" />
-
-
-                    <ImageView
-                        android:id="@+id/account_name_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_account_name"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
-                        android:id="@+id/account_type_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/lable_account_type"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
-                        android:id="@+id/debit_limit_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
-                        android:id="@+id/currency_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_over_daft_limit"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
-                        android:id="@+id/credit_limit_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
-                        app:srcCompat="@drawable/text_input_field" />
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
 
 
                     <EditText
@@ -177,6 +130,54 @@
                         app:layout_constraintStart_toStartOf="@id/credit_limit_field"
                         app:layout_constraintTop_toTopOf="@id/credit_limit_field"
                         tools:text="100000" />
+
+                    <ImageView
+                        android:id="@+id/account_name_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_account_name"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/account_type_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lable_account_type"
+                        app:srcCompat="@drawable/text_input_field" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
+
+
+                    <ImageView
+                        android:id="@+id/debit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/currency_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_over_daft_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/credit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
 
                     <Spinner
                         android:id="@+id/text_currency"

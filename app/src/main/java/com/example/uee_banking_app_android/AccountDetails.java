@@ -88,7 +88,7 @@ public class AccountDetails extends AppCompatActivity {
     }
 
     public void menu(View view){
-        Intent intent = new Intent(this, menu_screen.class);
+        Intent intent = new Intent(this, dashboard.class);
         startActivity(intent);
     }
 }

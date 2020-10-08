@@ -21,7 +21,7 @@ public class request_cheque_book extends AppCompatActivity {
     }
 
     public void mainMenu(View view){
-        Intent intent = new Intent(this,menu_screen.class);
+        Intent intent = new Intent(this,dashboard.class);
         startActivity(intent);
     }
 

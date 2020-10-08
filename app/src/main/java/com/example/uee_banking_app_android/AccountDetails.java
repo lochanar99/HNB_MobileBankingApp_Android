@@ -46,7 +46,7 @@ public class AccountDetails extends AppCompatActivity {
         dInterest = findViewById(R.id.text_debit_interest);
 
         Bundle bundle = getIntent().getExtras();
-        String accName = bundle.getString("Name");
+        String accName = "My Account";
 
 
         if(accName.equals("My Account")){

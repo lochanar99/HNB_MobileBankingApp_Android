@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="384dp"
-        android:layout_height="537dp"
+        android:layout_width="379dp"
+        android:layout_height="510dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/credit_card_add_background"
         android:text=""
@@ -44,7 +44,7 @@
         android:background="@drawable/text_input_field"
         android:ems="10"
         android:hint="xxxxxxxxx"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:paddingLeft="25dp"
         android:textColor="#014590"
         app:layout_constraintEnd_toEndOf="@+id/textView28"
@@ -60,7 +60,7 @@
         android:background="@drawable/text_input_field"
         android:ems="10"
         android:hint="0.0"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:paddingLeft="25dp"
         android:textColor="#014590"
         app:layout_constraintEnd_toEndOf="@+id/textView28"

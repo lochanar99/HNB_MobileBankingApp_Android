@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundtrbg"
+    android:background="@drawable/fundbg"
     tools:context=".bank_transfer">
 
     <Button
@@ -14,13 +14,13 @@
         android:background="@drawable/button"
         android:onClick="showPopupMsg"
         android:text="Transfer"
-        android:textColor="#3C3C3C"
+        android:textColor="@color/dark_blue"
         android:textSize="8pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/transferViewPager"
@@ -44,8 +44,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143"
-        app:tabIndicatorColor="@android:color/black"
+        app:layout_constraintVertical_bias="0.118"
+        app:tabIndicatorColor="@color/dark_blue"
         app:tabIndicatorHeight="4dp">
 
         <com.google.android.material.tabs.TabItem

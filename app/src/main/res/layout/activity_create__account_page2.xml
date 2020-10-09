@@ -54,40 +54,69 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout2"
-                    android:layout_width="match_parent"
+                    android:layout_width="289dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp">
 
+
                     <Button
                         android:id="@+id/next_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:background="@drawable/next_button"
+                        android:layout_width="145dp"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/nxtbtn"
                         android:onClick="openNext"
                         android:text="@string/defualt_empty"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/back_button"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/debit_limit_field" />
 
                     <Button
                         android:id="@+id/back_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:background="@drawable/cancel_button"
+                        android:layout_width="134dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/cancelbtn"
                         android:onClick="back"
                         android:text="@string/defualt_empty"
                         app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/next_button" />
 
+                    <ImageView
+                        android:id="@+id/account_name_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_account_name"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/debit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/credit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
 
                     <EditText
                         android:id="@+id/text_account_name"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:background="@color/see_through_background"
+                        android:hint="eg - Rashmika Gamage"
                         android:inputType="text|textCapSentences"
                         android:maxLines="1"
                         android:onClick="clickName"
@@ -113,7 +142,7 @@
                         app:layout_constraintEnd_toEndOf="@id/debit_limit_field"
                         app:layout_constraintStart_toStartOf="@id/debit_limit_field"
                         app:layout_constraintTop_toTopOf="@id/debit_limit_field"
-                        tools:text="100000" />
+                        tools:text="100000.00" />
 
                     <EditText
                         android:id="@+id/text_credit_limit"
@@ -129,16 +158,15 @@
                         app:layout_constraintEnd_toEndOf="@id/credit_limit_field"
                         app:layout_constraintStart_toStartOf="@id/credit_limit_field"
                         app:layout_constraintTop_toTopOf="@id/credit_limit_field"
-                        tools:text="100000" />
+                        tools:text="100000.00" /><![CDATA[
 
-                    <ImageView
-                        android:id="@+id/account_name_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_account_name"
-                        app:srcCompat="@drawable/text_input_field" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
+
+
+
+
+                    ]]>
 
                     <ImageView
                         android:id="@+id/account_type_field"
@@ -148,18 +176,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/lable_account_type"
                         app:srcCompat="@drawable/text_input_field" />
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
-
-
-                    <ImageView
-                        android:id="@+id/debit_limit_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
-                        app:srcCompat="@drawable/text_input_field" />
 
                     <ImageView
                         android:id="@+id/currency_field"
@@ -168,15 +184,6 @@
                         android:layout_marginStart="10dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/lable_over_daft_limit"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
-                        android:id="@+id/credit_limit_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
                         app:srcCompat="@drawable/text_input_field" />
 
                     <Spinner

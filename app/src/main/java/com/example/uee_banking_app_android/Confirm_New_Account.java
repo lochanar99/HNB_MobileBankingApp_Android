@@ -36,7 +36,7 @@ public class Confirm_New_Account extends AppCompatActivity {
         pageOneData = bundle.getStringArray("pageOneData");
         pageTwoData = bundle.getStringArray("pageTwoData");
 
-        name = findViewById(R.id.header);
+        name = findViewById(R.id.header1);
         owner = findViewById(R.id.text_owner);
         branch = findViewById(R.id.text_branch);
         currency = findViewById(R.id.text_currency);

@@ -44,4 +44,9 @@ public class dashboard extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void billPaymentDetails(View view){
+        Intent intent = new Intent(this, BillPaymentsMain.class);
+        startActivity(intent);
+    }
+
 }

@@ -48,11 +48,11 @@
 
     <TextView
         android:id="@+id/textView44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="19dp"
+        android:layout_height="14dp"
         android:background="@drawable/hamburger_menu"
         android:clickable="true"
-        android:onClick="mainMenu"
+        android:onClick="backToDashboard"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/tabLayout"
         app:layout_constraintEnd_toEndOf="parent"

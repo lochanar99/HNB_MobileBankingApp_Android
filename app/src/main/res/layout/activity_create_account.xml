@@ -26,7 +26,8 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@color/logo_background" />
+                app:srcCompat="@color/logo_background"
+                tools:visibility="invisible" />
 
 
             <ImageView
@@ -45,17 +46,14 @@
                 android:layout_width="0dp"
                 android:layout_height="385dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="231dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
                 app:cardBackgroundColor="@color/default_light_gray_background"
                 app:cardCornerRadius="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logo_background"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toTopOf="@+id/logo_background">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -82,16 +80,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/name_field"
                         app:srcCompat="@drawable/text_input_field" />
 
-                    <ImageView
-                        android:id="@+id/branch_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="5dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/branch_head"
-                        app:srcCompat="@drawable/text_input_field" />
-
                     <Button
                         android:id="@+id/next_button"
                         android:layout_width="137dp"
@@ -103,6 +91,29 @@
                         android:text="@string/defualt_empty"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/branch_field" />
+
+                    <ImageView
+                        android:id="@+id/branch_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/branch_head"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <Button
+                        android:id="@+id/back_button"
+                        android:layout_width="127dp"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/cancelbtn"
+                        android:onClick="openback"
+                        android:text="@string/defualt_empty"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.21"
+                        app:layout_constraintStart_toEndOf="@+id/next_button" />
 
                     <EditText
                         android:id="@+id/text_name"
@@ -120,19 +131,6 @@
                         app:layout_constraintEnd_toEndOf="@id/name_field"
                         app:layout_constraintStart_toStartOf="@id/name_field"
                         app:layout_constraintTop_toTopOf="@id/name_field" />
-
-                    <Button
-                        android:id="@+id/back_button"
-                        android:layout_width="127dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/cancelbtn"
-                        android:onClick="openback"
-                        android:text="@string/defualt_empty"
-                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.21"
-                        app:layout_constraintStart_toEndOf="@+id/next_button" />
 
                     <EditText
                         android:id="@+id/text_branch"
@@ -197,6 +195,32 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/account_under_head2"
+                android:layout_width="205dp"
+                android:layout_height="34dp"
+                android:background="@color/see_through_background"
+                android:text="Create Account"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.548"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/logo_background"
+                app:layout_constraintVertical_bias="0.302" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="39dp"
+                android:layout_height="77dp"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/logo_background"
+                app:layout_constraintVertical_bias="0.204"
+                app:srcCompat="@drawable/addacc" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

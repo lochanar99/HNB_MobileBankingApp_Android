@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -22,8 +23,10 @@ public class credit_cards extends AppCompatActivity {
     CreditCardsPageAdapter pageAdapter ;
     TabItem myCardTab ;
     TabItem addCardTab ;
-
+    EditText name;
     Dialog myDialog ;
+
+    EditText creditCardNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,8 @@ public class credit_cards extends AppCompatActivity {
         myCardTab = findViewById(R.id.myCards);
         addCardTab = findViewById(R.id.addCards);
         viewPager = findViewById(R.id.viewPager);
+       // name = (EditText) findViewById(R.id.emailSwitch);
+
 
         pageAdapter = new CreditCardsPageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
@@ -89,6 +94,9 @@ public class credit_cards extends AppCompatActivity {
             public void onClick(View view) {
                 myDialog.dismiss();
                 Toast.makeText(getApplicationContext(), "Successfully added", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(credit_cards.this,dashboard.class);
+                startActivity(intent);
             }
         });
         myDialog.show();
@@ -131,4 +139,10 @@ public class credit_cards extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "Back button is disabled in this Screen", Toast.LENGTH_LONG).show();
     }
+
+    public void backToDashboard(View view) {
+        Intent intent = new Intent(this, dashboard.class);
+        startActivity(intent);
+    }
+
 }

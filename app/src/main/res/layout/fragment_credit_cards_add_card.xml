@@ -152,12 +152,12 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/login_button"
+        android:layout_width="292dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button"
         android:onClick="addCardPopup"
-        android:text="Add Card"
-        android:textColor="#3C3C3C"
+        android:textColor="@color/dark_blue"
+        android:text="SAVE CARD"
         android:textSize="8pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

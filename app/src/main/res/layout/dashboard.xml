@@ -108,10 +108,11 @@
         app:layout_constraintVertical_bias="0.681" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/billPayments"
         android:layout_width="97dp"
         android:layout_height="99dp"
-        android:background="@drawable/investdash"
+        android:background="@drawable/icon_bill_payments"
+        android:onClick="billPaymentDetails"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
@@ -132,10 +133,11 @@
         app:layout_constraintVertical_bias="0.68" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/viewCreditCards"
+        android:onClick="viewCreditCards"
         android:layout_width="97dp"
         android:layout_height="99dp"
-        android:background="@drawable/viewdash"
+        android:background="@drawable/icon_credit_cards"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -195,6 +197,7 @@
         android:id="@+id/button10"
         android:layout_width="55dp"
         android:layout_height="54dp"
+        android:onClick="billPaymentDetails"
         android:background="@drawable/g1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -33,8 +33,19 @@ public class dashboard extends AppCompatActivity {
         Intent intent = new Intent(this, bank_transfer.class);
         startActivity(intent);
     }
+
+    public void viewCreditCards(View view) {
+        Intent intent = new Intent(this, credit_cards.class);
+        startActivity(intent);
+    }
+
     public void accountDetails(View view){
         Intent intent = new Intent(this, AccountDetails.class);
+        startActivity(intent);
+    }
+
+    public void billPaymentDetails(View view){
+        Intent intent = new Intent(this, BillPaymentsMain.class);
         startActivity(intent);
     }
 

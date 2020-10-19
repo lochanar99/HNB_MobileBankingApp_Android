@@ -7,6 +7,13 @@
     android:background="#3C3C3C"
     tools:context=".CreateAccount">
 
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:layout_editor_absoluteX="-51dp"
+        tools:layout_editor_absoluteY="-242dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="437dp"
@@ -225,5 +232,6 @@
             app:layout_constraintVertical_bias="0.188" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

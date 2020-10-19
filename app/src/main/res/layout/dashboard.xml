@@ -11,7 +11,7 @@
         android:id="@+id/sendMoney"
         android:layout_width="55dp"
         android:layout_height="54dp"
-        android:background="@drawable/g2"
+        android:background="@drawable/sendmoneybtn"
         android:onClick="bankTransfer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,8 @@
         android:id="@+id/checkBook"
         android:layout_width="55dp"
         android:layout_height="54dp"
+        android:background="@drawable/checkbookbtn"
         android:onClick="requestCheckBook"
-        android:background="@drawable/g3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
@@ -74,14 +74,14 @@
         android:id="@+id/viewAccount"
         android:layout_width="101dp"
         android:layout_height="101dp"
+        android:background="@drawable/dashbuttons"
         android:onClick="viewAccounts"
-        android:background="@drawable/viewdash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintVertical_bias="0.505" />
 
     <Button
         android:id="@+id/button17"
@@ -102,10 +102,10 @@
         android:background="@drawable/hldash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.681" />
+        app:layout_constraintVertical_bias="0.679" />
 
     <Button
         android:id="@+id/billPayments"
@@ -115,7 +115,7 @@
         android:onClick="ratingInterface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
@@ -134,13 +134,13 @@
 
     <Button
         android:id="@+id/viewCreditCards"
-        android:onClick="viewCreditCards"
         android:layout_width="97dp"
         android:layout_height="99dp"
         android:background="@drawable/icon_credit_cards"
+        android:onClick="viewCreditCards"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
@@ -152,10 +152,10 @@
         android:background="@drawable/autoldash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.679" />
 
     <Button
         android:id="@+id/button22"
@@ -164,7 +164,7 @@
         android:background="@drawable/savingdash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
@@ -189,7 +189,7 @@
         android:background="@drawable/savingdash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -208,15 +208,14 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="387dp"
-        android:layout_height="346dp"
+        android:layout_width="397dp"
+        android:layout_height="107dp"
+        android:background="@drawable/dashbg3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        app:srcCompat="@drawable/rec_home" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <TextView
         android:id="@+id/textView52"
@@ -284,15 +283,15 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="58dp"
-        android:layout_height="24dp"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.363"
-        app:srcCompat="@drawable/threelines" />
+        app:srcCompat="@drawable/menubtn" />
 
     <TextView
         android:id="@+id/textView57"
@@ -332,4 +331,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logout"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,6 +45,11 @@ public class dashboard extends AppCompatActivity {
     }
 
     public void billPaymentDetails(View view){
+        Intent intent = new Intent(this, BillPaymentsMain.class);
+        startActivity(intent);
+    }
+
+    public void ratingInterface(View view){
         Intent intent = new Intent(this, RatingActivity.class);
         startActivity(intent);
     }

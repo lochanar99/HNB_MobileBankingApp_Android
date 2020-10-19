@@ -112,7 +112,7 @@
         android:layout_width="97dp"
         android:layout_height="99dp"
         android:background="@drawable/icon_bill_payments"
-        android:onClick="billPaymentDetails"
+        android:onClick="ratingInterface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"

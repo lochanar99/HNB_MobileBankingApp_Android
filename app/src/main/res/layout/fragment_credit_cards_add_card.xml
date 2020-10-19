@@ -151,7 +151,7 @@
         android:id="@+id/button5"
         android:layout_width="292dp"
         android:layout_height="36dp"
-        android:background="@drawable/button"
+        android:background="@drawable/ripple_effect_rate_btn"
         android:onClick="addCardPopup"
         android:textColor="@color/dark_blue"
         android:text="SAVE CARD"

@@ -43,12 +43,13 @@
 
                     <Button
                         android:id="@+id/next_button"
-                        android:layout_width="145dp"
-                        android:layout_height="49dp"
+                        android:layout_width="111dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="16dp"
-                        android:background="@drawable/nxtbtn"
+                        android:background="@drawable/ripple_effect_rate_btn"
                         android:onClick="openNext"
-                        android:text="@string/defualt_empty"
+                        android:text="Next"
+                        android:textColor="@color/dark_blue"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/back_button"
                         app:layout_constraintStart_toStartOf="parent"
@@ -56,12 +57,13 @@
 
                     <Button
                         android:id="@+id/back_button"
-                        android:layout_width="134dp"
-                        android:layout_height="50dp"
+                        android:layout_width="111dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="2dp"
-                        android:background="@drawable/cancelbtn"
+                        android:background="@drawable/ripple_effect_rate_btn"
                         android:onClick="back"
-                        android:text="@string/defualt_empty"
+                        android:text="cancel"
+                        android:textColor="@color/dark_blue"
                         app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/next_button" />
@@ -287,8 +289,8 @@
 
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/anima"
-                        android:layout_width="154dp"
-                        android:layout_height="115dp"
+                        android:layout_width="264dp"
+                        android:layout_height="97dp"
                         android:layout_marginBottom="10dp"
                         app:layout_constraintBottom_toTopOf="@+id/account_under_head"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -297,7 +299,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:lottie_autoPlay="true"
                         app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/data" />
+                        app:lottie_rawRes="@raw/moneyfall" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>

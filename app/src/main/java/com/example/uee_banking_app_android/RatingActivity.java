@@ -105,7 +105,7 @@ public class RatingActivity extends AppCompatActivity {
         btnfeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Toast.makeText(RatingActivity.this, "Thank you for rated us!", Toast.LENGTH_LONG).show();
+              // Toast.makeText(RatingActivity.this, "Thank you for rated us!", Toast.LENGTH_LONG).show();
             }
         });
 

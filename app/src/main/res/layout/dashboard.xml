@@ -83,10 +83,10 @@
         app:layout_constraintVertical_bias="0.504" />
 
     <Button
-        android:id="@+id/billPayments"
+        android:id="@+id/rate_us"
         android:layout_width="97dp"
         android:layout_height="99dp"
-        android:background="@drawable/icon_bill_payments"
+        android:background="@drawable/rate_us_icon"
         android:onClick="ratingInterface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -199,7 +199,7 @@
         android:layout_width="55dp"
         android:layout_height="54dp"
         android:onClick="billPaymentDetails"
-        android:background="@drawable/g1"
+        android:background="@drawable/paybillsbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.62"

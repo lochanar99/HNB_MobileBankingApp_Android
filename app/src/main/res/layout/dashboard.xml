@@ -306,10 +306,10 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024"
+        app:layout_constraintVertical_bias="0.107"
         app:srcCompat="@drawable/menubtn" />
 
     <TextView

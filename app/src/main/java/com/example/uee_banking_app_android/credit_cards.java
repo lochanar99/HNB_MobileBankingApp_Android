@@ -70,7 +70,7 @@ public class credit_cards extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void addCardPopup(View view){
+    public void addCardPopups(View view){
         Button closeBttn ;
         Button yesBttn;
         TextView textMsg ;
@@ -93,13 +93,25 @@ public class credit_cards extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myDialog.dismiss();
-                Toast.makeText(getApplicationContext(), "Successfully added", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(credit_cards.this,dashboard.class);
-                startActivity(intent);
+
+                nextPopUps();
+
             }
         });
         myDialog.show();
+    }
+
+    public void nextPopUps()  {
+
+        try {
+            myDialog.setContentView(R.layout.paymentsent);
+            myDialog.show();
+        }catch (Exception e){
+
+        }
+
+
     }
 
     public void delinkCard(View view){

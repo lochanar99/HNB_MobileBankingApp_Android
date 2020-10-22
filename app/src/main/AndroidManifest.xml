@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RatingActivity"></activity>
+        <activity android:name=".rate_add_popup"></activity>
+        <activity android:name=".credit_card_save_popup" />
+        <activity android:name=".RatingActivity" />
         <activity android:name=".dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +24,6 @@
         <activity android:name=".bank_transfer_popup" />
         <activity android:name=".TransactionHistory" />
         <activity android:name=".AccountDetails" />
-
         <activity android:name=".Confirm_New_Account" />
         <activity android:name=".Create_Account_page2" />
         <activity android:name=".CreateAccount" />
@@ -80,7 +81,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

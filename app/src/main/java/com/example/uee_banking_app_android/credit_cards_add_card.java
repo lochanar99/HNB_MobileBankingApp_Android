@@ -109,13 +109,27 @@ public class credit_cards_add_card extends Fragment {
             @Override
             public void onClick(View view) {
                 myDialog.dismiss();
-                Toast.makeText(getContext(), "Successfully added", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(getActivity(),dashboard.class);
-                startActivity(intent);
+                //Toast.makeText(getContext(), "Successfully added", Toast.LENGTH_LONG).show();
+
+                nextPopUp();
+
+
             }
         });
         myDialog.show();
+    }
+
+    public void nextPopUp()  {
+
+        try {
+            myDialog.setContentView(R.layout.activity_credit_card_save_popup);
+            myDialog.show();
+        }catch (Exception e){
+
+        }
+
+
     }
 
       private TextWatcher creditTextWatcher = new TextWatcher() {

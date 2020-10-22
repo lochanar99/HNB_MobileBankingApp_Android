@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:theme="@style/account_background"
     tools:context=".Select_Account">
 
@@ -30,16 +31,16 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="24dp"
-        android:layout_height="30dp"
-        android:background="@drawable/hamburger_menu"
+        android:layout_width="29dp"
+        android:layout_height="39dp"
+        android:background="@drawable/menubtn"
         android:onClick="menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <ScrollView
         android:id="@+id/main_scroll"

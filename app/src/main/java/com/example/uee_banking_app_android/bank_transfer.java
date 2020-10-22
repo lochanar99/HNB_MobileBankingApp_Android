@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.concurrent.TimeUnit;
+
 public class bank_transfer extends AppCompatActivity {
 
     TabLayout tabLayout;
@@ -25,7 +27,7 @@ public class bank_transfer extends AppCompatActivity {
     Dialog myDialog ;
     String accName;
     EditText name;
-
+    EditText completemsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,10 +68,14 @@ public class bank_transfer extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goHome(View view){
+        Intent intent = new Intent(this,dashboard.class);
+        startActivity(intent);
+    }
+
     public void showPopupMsg(View view){
         Button closeBttn ;
         Button yesBttn;
-        accName = name.getText().toString();
         Toast toast = Toast.makeText(getApplicationContext(), accName, Toast.LENGTH_LONG);
         toast.show();
         myDialog.setContentView(R.layout.activity_bank_transfer_popup);
@@ -87,9 +93,24 @@ public class bank_transfer extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myDialog.dismiss();
-                Toast.makeText(getApplicationContext(), "Transfer Request Made Successfully", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Transfer Request Made Successfully", Toast.LENGTH_LONG).show();
+
+                    nextPopUp();
+
             }
         });
         myDialog.show();
+    }
+
+    public void nextPopUp()  {
+
+        try {
+            myDialog.setContentView(R.layout.paymentsent);
+            myDialog.show();
+        }catch (Exception e){
+
+        }
+
+
     }
 }

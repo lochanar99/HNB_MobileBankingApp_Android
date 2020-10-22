@@ -20,7 +20,7 @@
 
     <style name="nav_theme">
         <item name="colorPrimary">@color/dark_blue</item>
-        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:colorActivatedHighlight">#C0A4FA</item>
         <item name="listPreferredItemHeightSmall">50dp</item>
         <item name="android:textSize">15dp</item>
         <item name="iconSize">25dp</item>

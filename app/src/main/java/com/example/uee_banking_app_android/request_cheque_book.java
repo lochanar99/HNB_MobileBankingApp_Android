@@ -48,11 +48,25 @@ public class request_cheque_book extends AppCompatActivity {
         yesBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                refreshPage(null);
-                Toast.makeText(getApplicationContext(), "Successfully sent, you will receive an email shortly", Toast.LENGTH_LONG).show();
+                nextPopUp();
+                //Toast.makeText(getApplicationContext(), "Successfully sent, you will receive an email shortly", Toast.LENGTH_LONG).show();
             }
         });
         myDialog.show();
+    }
+
+    public void nextPopUp()  {
+
+        try {
+            myDialog.setContentView(R.layout.messagesent_check_book);
+            myDialog.show();
+            wait(1000);
+            refreshPage(null);
+        }catch (Exception e){
+
+        }
+
+
     }
 
 

@@ -115,6 +115,8 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
         switch (id){
             case R.id.home :
                 break;
+            case R.id.rate : Intent intent = new Intent(this,RatingActivity.class); startActivity(intent);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

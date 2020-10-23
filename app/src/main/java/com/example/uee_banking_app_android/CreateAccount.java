@@ -77,8 +77,8 @@ public class CreateAccount extends AppCompatActivity {
 
 
     public void openback(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_DEVICE_DEFAULT_DARK);
-        builder.setTitle("Confromation Message");
+        AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_HOLO_LIGHT);
+        builder.setTitle("Confirmation Message");
         builder.setMessage("are you sure you want to go back?\n all information will be lost");
         builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             @Override

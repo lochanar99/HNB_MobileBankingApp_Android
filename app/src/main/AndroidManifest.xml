@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rate_add_popup"></activity>
+        <activity android:name=".add_provider_popup"></activity>
+        <activity android:name=".card_delink_popup" />
+        <activity android:name=".rate_add_popup" />
         <activity android:name=".credit_card_save_popup" />
         <activity android:name=".RatingActivity" />
         <activity android:name=".dashboard">

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".dashboard"
-    tools:openDrawer=""
+    tools:openDrawer="start"
     android:id="@+id/drawer_layout">
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/lightbg"
+        android:background="@drawable/headerbg"
         app:itemTextColor="@color/dark_blue"
         app:itemIconTint="@color/orange"
         android:layout_gravity="start"

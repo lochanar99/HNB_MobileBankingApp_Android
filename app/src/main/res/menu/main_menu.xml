@@ -25,7 +25,7 @@
 
     </item>
 
-    <item android:title="Payments">
+    <item android:title="Need Help">
         <menu>
             <group android:checkableBehavior="single">
                 <item
@@ -51,7 +51,7 @@
                     android:icon="@drawable/rate"/>
                 <item
                     android:id="@+id/logout"
-                    android:title="Sign Us"
+                    android:title="Sign Out"
                     android:icon="@drawable/logout"/>
             </group>
         </menu>

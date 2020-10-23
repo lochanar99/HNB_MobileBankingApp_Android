@@ -11,7 +11,7 @@
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/headerbg"
+        android:background="@drawable/lightbg"
         app:itemTextColor="@color/dark_blue"
         app:itemIconTint="@color/orange"
         android:layout_gravity="start"

@@ -78,8 +78,8 @@ public class add_provider_ui extends AppCompatActivity {
 
 
 
-    public void addProviderButton(View view){
-        Intent intent = new Intent(this, BillPaymentsMain.class);
-        startActivity(intent);
-    }
+//    public void addprovider(View view){
+//        Intent intent = new Intent(this, BillPaymentsMain.class);
+//        startActivity(intent);
+//    }
 }

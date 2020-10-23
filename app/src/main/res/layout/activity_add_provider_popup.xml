@@ -5,11 +5,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="#AD000000"
-    tools:context=".rate_add_popup">
+    tools:context=".add_provider_popup">
 
 
     <TextView
-        android:id="@+id/top_txt"
+        android:id="@+id/top_txt500"
         android:layout_width="322dp"
         android:layout_height="329dp"
         android:background="@drawable/request_cheque_book_white_space"
@@ -20,8 +20,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/anima60"
+        android:id="@+id/anima600"
         android:layout_width="252dp"
         android:layout_height="198dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,17 +35,29 @@
         app:lottie_rawRes="@raw/h_star_badge" />
 
     <TextView
-        android:id="@+id/btm_t"
+        android:id="@+id/btm_t501"
         android:layout_width="171dp"
         android:layout_height="54dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="72dp"
-        android:text="Thank you for Rated"
+        android:text="Provider Added Successfully"
         android:textAlignment="center"
         android:textColor="#014590"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/anima60" />
+        app:layout_constraintTop_toBottomOf="@+id/anima600" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="176dp"
+        android:layout_height="55dp"
+        android:onClick="addProviderButton"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_txt500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/transp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

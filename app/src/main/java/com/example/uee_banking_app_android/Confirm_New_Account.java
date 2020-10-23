@@ -3,10 +3,13 @@ package com.example.uee_banking_app_android;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -25,12 +28,13 @@ public class Confirm_New_Account extends AppCompatActivity {
 
     private String[] pageOneData;
     private String[]  pageTwoData;
-
+    Dialog myDialog ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm__new__account);
+        myDialog = new Dialog(this);
 
         Bundle bundle = getIntent().getExtras();
         pageOneData = bundle.getStringArray("pageOneData");
@@ -82,21 +86,52 @@ public class Confirm_New_Account extends AppCompatActivity {
     }
 
     public void confirm(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
-        builder.setTitle("Confirmation Message");
-        builder.setMessage("Account Request has been made an e-mail will be sent to your email within 3 to 5 working days");
-        builder.setPositiveButton("confirm", new DialogInterface.OnClickListener() {
+        Button closeBttn ;
+        Button yesBttn;
+
+        myDialog.setContentView(R.layout.addaccountfinalconfirmation);
+        closeBttn = (Button) myDialog.findViewById(R.id.msg_close_bttn);
+        yesBttn = (Button) myDialog.findViewById(R.id.msg_yes_bttn);
+
+        closeBttn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                next();
+            public void onClick(View view) {
+                myDialog.dismiss();
             }
         });
-        builder.setNegativeButton("Back", null);
-        builder.show();
+
+        yesBttn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nextPopUp();
+            }
+        });
+        myDialog.show();
 
     }
+    public void nextPopUp() {
+
+        try {
+            Handler handler = new Handler();
+            myDialog.setContentView(R.layout.accountreqsent);
+            myDialog.show();
+            final Intent intent = new Intent(this, Select_Account.class);
+            handler.postDelayed(new Runnable() {
+                public void run() {
+
+                    startActivity(intent);
+
+                }
+            }, 8000);
+
+
+        } catch (Exception e) {
+
+        }
+    }
     public void cancel(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_DEVICE_DEFAULT_DARK);
+
+  /*      AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_DEVICE_DEFAULT_DARK);
         builder.setTitle("Confromation Message");
         builder.setMessage("are you sure you want to cancel\n all entered information will be lost");
         builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
@@ -106,7 +141,31 @@ public class Confirm_New_Account extends AppCompatActivity {
             }
         });
         builder.setNegativeButton("Return", null);
-        builder.show();
+        builder.show();*/
+
+        //new
+
+        Button closeBttn ;
+        Button yesBttn;
+
+        myDialog.setContentView(R.layout.accountconfirm);
+        closeBttn = (Button) myDialog.findViewById(R.id.msg_close_bttn);
+        yesBttn = (Button) myDialog.findViewById(R.id.msg_yes_bttn);
+
+        closeBttn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+
+        yesBttn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                back();
+            }
+        });
+        myDialog.show();
     }
 
     private String getTypeByIndex(int index){

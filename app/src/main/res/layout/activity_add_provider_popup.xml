@@ -52,7 +52,6 @@
         android:layout_width="176dp"
         android:layout_height="55dp"
         android:layout_marginBottom="16dp"
-        android:onClick="addprovider"
         app:layout_constraintBottom_toBottomOf="@+id/top_txt500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

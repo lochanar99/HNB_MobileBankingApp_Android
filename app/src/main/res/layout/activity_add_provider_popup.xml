@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.251"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/h_star_badge" />
+        app:lottie_rawRes="@raw/ha_blue_success" />
 
     <TextView
         android:id="@+id/btm_t501"
@@ -51,7 +51,6 @@
         android:id="@+id/button24"
         android:layout_width="176dp"
         android:layout_height="55dp"
-        android:onClick="addProviderButton"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/top_txt500"
         app:layout_constraintEnd_toEndOf="parent"

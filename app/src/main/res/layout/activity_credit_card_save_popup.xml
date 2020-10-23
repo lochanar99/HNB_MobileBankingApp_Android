@@ -48,5 +48,17 @@
         app:layout_constraintTop_toBottomOf="@+id/anima30"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="backToDashboard"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anima30"
+        android:background="@color/transp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/default_project_background"
+    android:background="@drawable/bg"
     tools:context=".Confirm_New_Account">
 
     <ScrollView
@@ -47,11 +47,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@color/default_light_gray_background"
+                android:background="@drawable/bg"
                 app:layout_constraintEnd_toEndOf="@id/logo_background"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/logo_background"
-                app:srcCompat="@color/default_light_gray_background" />
+                app:srcCompat="@drawable/viewaccountbg" />
 
             <ImageView
                 android:id="@+id/separator_line"
@@ -73,7 +73,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/inner_layout"
                 app:layout_constraintStart_toStartOf="@id/inner_layout"
                 app:layout_constraintTop_toTopOf="@+id/inner_layout"
-                app:srcCompat="@color/dark_blue" />
+                app:srcCompat="@drawable/viewaccountbg" />
 
             <ImageView
                 android:id="@+id/details_block2"
@@ -85,7 +85,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/inner_layout"
                 app:layout_constraintStart_toStartOf="@+id/inner_layout"
                 app:layout_constraintTop_toBottomOf="@+id/details_block1"
-                app:srcCompat="@color/dark_blue" />
+                app:srcCompat="@drawable/viewaccountbg" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -106,7 +106,7 @@
                     android:layout_height="55dp"
                     android:layout_marginStart="8dp"
                     android:text="New Account"
-                    android:textColor="@color/default_text_colour"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 

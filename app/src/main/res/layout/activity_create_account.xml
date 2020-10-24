@@ -218,12 +218,13 @@
 
         <TextView
             android:id="@+id/account_under_head3"
-            android:layout_width="260dp"
-            android:layout_height="43dp"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
             android:background="@color/see_through_background"
             android:text="Few steps to add your account"
             android:textColor="@color/dark_blue"
             android:textSize="18sp"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"

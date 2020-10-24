@@ -14,7 +14,7 @@
         <activity android:name=".rate_add_popup" />
         <activity android:name=".credit_card_save_popup" />
         <activity android:name=".RatingActivity" />
-        <activity android:name=".dashboard">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,7 @@
         <activity android:name=".TransactionHistory" />
         <activity android:name=".AccountDetails" />
         <activity android:name=".Confirm_New_Account" />
+        <activity android:name=".dashboard" />
         <activity android:name=".Create_Account_page2" />
         <activity android:name=".CreateAccount" />
         <activity
